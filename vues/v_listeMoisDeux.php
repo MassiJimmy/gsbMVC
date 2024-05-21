@@ -13,7 +13,7 @@
             
 			foreach ($lesMois as $unMois)
 			{
-			    $mois = $unMois['mois'];
+			  $mois = $unMois['mois'];
 				$numAnnee =  $unMois['numAnnee'];
 				$numMois =  $unMois['numMois'];
 				if($mois == $moisASelectionner){
@@ -24,20 +24,20 @@
 				else{ ?>
 				<option value="<?php echo $mois ?>"><?php echo  $numMois."/".$numAnnee ?> </option>
 				<?php 
-				}
+			  	}
 			
-			}
+			    }
            
-		   ?>    
+		      ?>    
             
-        </select>
-      </p>
+          </select>
+        </p>
       </div>
       <div class="piedForm">
-      <p>
-        <input id="ok" type="submit" value="Valider" size="20" />
-        <input id="annuler" type="reset" value="Effacer" size="20" />
-      </p> 
+          <p>
+            <input id="ok" type="submit" value="Valider" size="20" />
+            <input id="annuler" type="reset" value="Effacer" size="20" />
+          </p> 
       </div>
         
-      </form>
+    </form>
